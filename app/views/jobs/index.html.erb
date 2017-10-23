@@ -1,0 +1,10 @@
+<ul>
+  <% @jobs.each do |job| %>
+  <li>
+    <%= job.id %>
+    <%= job.name %>
+    <%= link_to 'Edit Job', edit_job_path(job) %>
+    <%= link:to 'Destroy Job', job, method: :delete %>
+    </li>
+<% end %>
+</ul>
